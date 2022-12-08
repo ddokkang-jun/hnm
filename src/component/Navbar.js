@@ -22,6 +22,7 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
       navigate(`?q=${event.target.value}`);
     }
   };
+  
   return (
     <div>
       <div className="side-menu" style={{ width: width }}>

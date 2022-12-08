@@ -44,6 +44,7 @@ const ProductAll = () => {
                 <ProductCard item={item} />
               </Col>
             ))}
+            
         </Row>
       )}
     </Container>
