@@ -12,6 +12,7 @@ const ProductAll = () => {
     try {
       let keyword = query.get("q") || "";
       let url = `https://my-json-server.typicode.com/ddokkang-jun/hnm/products?q=${keyword}`;
+      // let url = `http://localhost:5000/products?q=${keyword}`;
       let response = await fetch(url);
       let data = await response.json();
       if (data.length < 1) {
@@ -44,7 +45,6 @@ const ProductAll = () => {
                 <ProductCard item={item} />
               </Col>
             ))}
-            
         </Row>
       )}
     </Container>
